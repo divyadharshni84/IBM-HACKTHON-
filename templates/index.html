@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>AI Resume Enhancer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="flex justify-between items-center p-6">
+        <div class="text-2xl font-semibold">
+            <span class="text-blue-600">AI Resume</span>
+            <span class="text-blue-400">Enhancer</span>
+        </div>
+        <nav class="space-x-8">
+            <a class="text-gray-600 hover:text-gray-800" href="#">About</a>
+            <a class="text-gray-600 hover:text-gray-800" href="#">Passions</a>
+            <a class="text-gray-600 hover:text-gray-800" href="#">Portfolio</a>
+            <a class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600" href="#">Contact Me</a>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main class="flex flex-col items-center mt-10">
+        <div class="flex items-start space-x-10">
+            <div class="flex flex-col items-start space-y-4 mt-10">
+                <div class="flex space-x-4">
+                    <input class="border border-gray-300 rounded-lg p-2 w-64" type="file"/>
+                    <button type="button" id="enhanceButton" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
+
+                        ENHANCE
+                    </button>
+                </div>
+                <input class="border border-gray-300 rounded-lg p-2 w-96" placeholder="Job Title" type="text"/>
+                <div class="flex flex-col items-start w-96">
+                    <label class="text-gray-600">Job Description</label>
+                    <input class="border border-green-300 rounded-lg p-2 w-full" placeholder="Job Description" type="text"/>
+                </div>
+            </div>
+            <img alt="Illustration of a person working on a computer" class="mt-10" height="300" 
+                 src="https://storage.googleapis.com/a1aa/image/-u35gSd4S6tEuEcDYJL-CBgG-AmKwkGbZ0Y-zqhOmWg.jpg" width="400"/>
+        </div>
+
+        <h2 class="text-2xl font-semibold text-blue-600 mt-10">Upcoming Scope</h2>
+        <div class="flex justify-center space-x-8 mt-6">
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <img alt="Front-End Developer" class="mx-auto mb-4" height="100" 
+                     src="https://storage.googleapis.com/a1aa/image/NYSO6XMgSpBT9-ilkgByGUfvAjQzS-iCOO1jkO8F3gA.jpg" width="100"/>
+                <h3 class="text-lg font-semibold">Front-End Developer</h3>
+                <p class="text-gray-600">(Sass, Bootstrap, Tailwind)</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <img alt="Back-End Developer" class="mx-auto mb-4" height="100" 
+                     src="https://storage.googleapis.com/a1aa/image/t5o_M6yfgnNhQb9W72jss1nN06Nx8iTIBImf9Cfz4Rc.jpg" width="100"/>
+                <h3 class="text-lg font-semibold">Back-End Developer</h3>
+                <p class="text-gray-600">(NodeJS, Laravel, Codeigniter)</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <img alt="UI/UX Designer" class="mx-auto mb-4" height="100" 
+                     src="https://storage.googleapis.com/a1aa/image/vuZdaehgf-8e5OqvWQEqc7hWSefxXrhc5zta7DVCceI.jpg" width="100"/>
+                <h3 class="text-lg font-semibold">UI/UX Designer</h3>
+                <p class="text-gray-600">(Figma, Zeplin, Adobe XD)</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Portfolio Section -->
+    <div class="container mx-auto px-4 py-8">
+        <h2 class="text-center text-2xl font-light mb-8">Add Your <span class="font-bold">Portfolio</span></h2>
+        <div class="flex justify-center space-x-4 mb-12">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img alt="Sendpay website" class="w-full h-40 object-cover" height="200" 
+                     src="https://storage.googleapis.com/a1aa/image/PZHoHvkD9KjGIlmyi927RD3vj4xBBN2E2e6iytL4FbY.jpg" width="300"/>
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Sendpay</h3>
+                    <p class="text-sm text-gray-600">Sending money is easier than before.</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img alt="E-Commerce website" class="w-full h-40 object-cover" height="200" 
+                     src="https://storage.googleapis.com/a1aa/image/qD9hguDmyYYvcvp8slpupteDcAuplP5u9_flm7TBhvo.jpg" width="300"/>
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">E-Commerce Website</h3>
+                    <p class="text-sm text-gray-600">A modern e-commerce platform.</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img alt="BeatsLearning website" class="w-full h-40 object-cover" height="200" 
+                     src="https://storage.googleapis.com/a1aa/image/JX7giLmRPd-X50VgtLtTkoKMPIMcjBSlLSNw8E6MVi4.jpg" width="300"/>
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">BeatsLearning</h3>
+                    <p class="text-sm text-gray-600">Believe and you can achieve.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <h2 class="text-center text-2xl font-light mb-8">Contact <span class="font-bold">Us</span></h2>
+        <div class="flex justify-center space-x-8">
+            <div class="text-center">
+                <div class="bg-blue-500 text-white rounded-full p-4 mb-2">
+                    <i class="fab fa-github fa-2x"></i>
+                </div>
+                <p class="text-sm font-semibold">Github</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-blue-500 text-white rounded-full p-4 mb-2">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </div>
+                <p class="text-sm font-semibold">Instagram</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-blue-500 text-white rounded-full p-4 mb-2">
+                    <i class="fas fa-envelope fa-2x"></i>
+                </div>
+                <p class="text-sm font-semibold">Email</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-blue-500 text-white rounded-full p-4 mb-2">
+                    <i class="fas fa-phone fa-2x"></i>
+                </div>
+                <p class="text-sm font-semibold">Telp</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
